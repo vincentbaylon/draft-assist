@@ -82,7 +82,7 @@ const App = () => {
 
   const appStyle = {
     maxWidth: '1200px',
-    margin: '25px auto',
+    margin: 'auto',
   };
 
   const filterStyle = {
