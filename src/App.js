@@ -56,7 +56,6 @@ const App = () => {
   const handleUndo = () => {
     const lastDrafted = history[history.length - 1];
     if (lastDrafted) {
-      // Insert the player back into the players list maintaining the original order
       const index = originalPlayers.findIndex(
         (p) => p['Player Name'] === lastDrafted['Player Name']
       );
@@ -82,7 +81,8 @@ const App = () => {
   ];
 
   const appStyle = {
-    margin: '25px',
+    maxWidth: '1200px',
+    margin: '25px auto',
   };
 
   const filterStyle = {
