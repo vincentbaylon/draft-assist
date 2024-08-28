@@ -1,13 +1,7 @@
 import React from 'react';
+import './PlayerList.css';
 
 const PlayerList = ({ players, onDrafted }) => {
-  const listStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gap: '10px',
-    marginTop: '20px',
-  };
-
   const cardStyle = {
     padding: '10px',
     borderRadius: '5px',
@@ -55,7 +49,7 @@ const PlayerList = ({ players, onDrafted }) => {
   };
 
   return (
-    <div className='player-list' style={listStyle}>
+    <div className='player-list'>
       {players.map((player) => (
         <div key={player.Rank} className='player-card' style={cardStyle}>
           <div style={headerStyle}>

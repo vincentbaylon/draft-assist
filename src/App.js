@@ -104,6 +104,7 @@ const App = () => {
     fontWeight: '600',
     fontSize: '15px',
     cursor: 'pointer',
+    marginTop: '10px',
   };
 
   const headerStyle = {
